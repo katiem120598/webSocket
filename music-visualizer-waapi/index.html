@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Hello Audio Visualizer - Web Audio API</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Example adapted from https://github.com/mdn/webaudio-examples/tree/main/audio-analyser -->
+  <canvas id="canvas" width="512" height="256" style="background-color: black;"></canvas>
+
+  <div id="controls">
+    <input type="button" id="start_button" value="Start" />
+    &nbsp; &nbsp;
+    <input type="button" id="stop_button" value="Stop" disabled />
+    <select name="vizmode" id="vizmode-select">
+      <option value="thin">Thin</option>
+      <option value="solid">Solid</option>
+    </select>
+    <br /><br />
+    <output id="msg">Press Start to play</output>
+  </div>
+
+  <!-- Load utility functions -->
+  <script type="text/javascript" src="js/color-functions.js"></script>
+
+  <!-- Load main script file -->
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
